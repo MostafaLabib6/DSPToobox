@@ -217,11 +217,12 @@ namespace DSPAlgorithms.Algorithms
 
                 }
 
+
             }
             else if (InputFilterType == FILTER_TYPES.BAND_STOP)
             {
-                float CutOffFrequency1 = (float)(InputF1 / InputFS + normalized_TransitionBand / 2.0);
-                float CutOffFrequency2 = (float)(InputF2 / InputFS - normalized_TransitionBand / 2.0);
+                float CutOffFrequency1 = (float)(InputF2 / InputFS + normalized_TransitionBand / 2.0);
+                float CutOffFrequency2 = (float)(InputF1 / InputFS - normalized_TransitionBand / 2.0);
                 List<float> window = get_window_fn(Attenuation, N);
                 List<float> h0 = get_band_reject(CutOffFrequency1, CutOffFrequency2, N);
                 for (int n = -N / 2; n <= N / 2; ++n)
