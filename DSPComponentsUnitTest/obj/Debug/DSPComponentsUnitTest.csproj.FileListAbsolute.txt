@@ -344,3 +344,7 @@ C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponentsUnitTest\o
 C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponentsUnitTest\obj\Debug\DSPComponentsUnitTest.csproj.CopyComplete
 C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponentsUnitTest\obj\Debug\DSPComponentsUnitTest.dll
 C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponentsUnitTest\obj\Debug\DSPComponentsUnitTest.pdb
+C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponentsUnitTest\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponentsUnitTest\bin\Debug\OxyPlot.dll
+C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponentsUnitTest\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponentsUnitTest\bin\Debug\OxyPlot.xml

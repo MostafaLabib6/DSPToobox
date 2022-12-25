@@ -17,6 +17,7 @@ namespace DSPAlgorithms.Algorithms
             float mean = InputSignal.Samples.Average();
             OutputSignal = new Signal(new List<float>(), false);
             OutputSignal.Samples = InputSignal.Samples.Select(element => element - mean).ToList();
+            OutputSignal.SamplesIndices = new List<int>(InputSignal.SamplesIndices);
         }
     }
 }

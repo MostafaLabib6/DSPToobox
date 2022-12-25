@@ -17,18 +17,22 @@ namespace DSPAlgorithms.Algorithms
         public override void Run()
         {
             OutputFreqDomainSignal = new Signal(new List<float>(), false);
+            OutputFreqDomainSignal.Frequencies = new List<float>();
             OutputFreqDomainSignal.FrequenciesAmplitudes = new List<float>();
             OutputFreqDomainSignal.FrequenciesPhaseShifts = new List<float>();
             int N = InputTimeDomainSignal.Samples.Count;
-            for (int k = 0; k < N; ++k) {
+            for (int k = 0; k < N; ++k)
+            {
                 Complex sum = new Complex();
-                for (int i = 0; i < N; i++) {
+                for (int i = 0; i < N; i++)
+                {
                     double sample = InputTimeDomainSignal.Samples[i];
-                    Complex c = new Complex((Math.Cos((-2*Math.PI*k*i)/N)),(Math.Sin((-2*Math.PI*k*i)/N)));
+                    Complex c = new Complex((Math.Cos((-2 * Math.PI * k * i) / N)), (Math.Sin((-2 * Math.PI * k * i) / N)));
                     sum += sample * c;
                 }
                 double amplitude = sum.Magnitude;
                 double phaseShift = sum.Phase;
+                OutputFreqDomainSignal.Frequencies.Add(k);
                 OutputFreqDomainSignal.FrequenciesAmplitudes.Add((float)amplitude);
                 OutputFreqDomainSignal.FrequenciesPhaseShifts.Add((float)phaseShift);
             }

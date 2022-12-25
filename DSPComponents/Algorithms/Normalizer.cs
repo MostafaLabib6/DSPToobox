@@ -16,18 +16,17 @@ namespace DSPAlgorithms.Algorithms
 
         public override void Run()
         {
-            OutputNormalizedSignal = new Signal(new List<float>(),false);
+            OutputNormalizedSignal = new Signal(new List<float>(), new List<int>(), false);
             float oldMin = InputSignal.Samples.Min();
             float oldMax = InputSignal.Samples.Max();
 
-            for(int i = 0; i < InputSignal.Samples.Count; ++i)
+            for (int i = 0; i < InputSignal.Samples.Count; ++i)
             {
                 OutputNormalizedSignal.Samples.Add(((InputSignal.Samples[i] - oldMin) /
                     (oldMax - oldMin)) * (InputMaxRange - InputMinRange) + InputMinRange);
-
+                OutputNormalizedSignal.SamplesIndices.Add(InputSignal.SamplesIndices[i]);
             }
 
-            
         }
     }
 }
