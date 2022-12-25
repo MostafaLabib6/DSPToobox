@@ -10,12 +10,12 @@ namespace DSPAlgorithms.Algorithms
     public class FIR : Algorithm
     {
         public Signal InputTimeDomainSignal { get; set; }
-        public FILTER_TYPES InputFilterType { get; set; }
+        public FILTER_TYPES InputFilterType { get; set; }//low /high /pass /reject
         public float InputFS { get; set; }
         public float? InputCutOffFrequency { get; set; }
         public float? InputF1 { get; set; }
         public float? InputF2 { get; set; }
-        public float InputStopBandAttenuation { get; set; }
+        public float InputStopBandAttenuation { get; set; }//chioce window based on it
         public float InputTransitionBand { get; set; }
         public Signal OutputHn { get; set; }
         public Signal OutputYn { get; set; }
@@ -149,10 +149,10 @@ namespace DSPAlgorithms.Algorithms
         public override void Run()
         {
             OutputHn = new Signal(new List<float>(), InputTimeDomainSignal.Periodic);
-            OutputHn.SamplesIndices = new List<int>();
             OutputYn = new Signal(new List<float>(), InputTimeDomainSignal.Periodic);
+            OutputHn.SamplesIndices = new List<int>();
 
-            int Attenuation = find_first_greater_attenuation(InputStopBandAttenuation);
+            int Attenuation = find_first_greater_attenuation(InputStopBandAttenuation);//first match attenuation
             float normalized_TransitionBand = InputTransitionBand / InputFS;
             int N = calc_N(normalized_TransitionBand, Attenuation);
             if (InputFilterType == FILTER_TYPES.LOW)
