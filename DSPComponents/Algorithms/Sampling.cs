@@ -36,7 +36,9 @@ namespace DSPAlgorithms.Algorithms
         {
             Signal result = new Signal(new List<float>(), new List<int>(), s.Periodic);
             //int numOfSamples = ((samplingFactor - 1) * s.Samples.Count) + 1;
-            int numOfSamples = samplingFactor * s.Samples.Count - (samplingFactor - 2);
+            int numOfSamples = samplingFactor * s.Samples.Count - (samplingFactor - 2);//count new number of samples
+            //3*3-1=8
+            //3*4-1=11
             for (int i = 0; i < numOfSamples; i++)
             {
                 // 0,1,2 (L = 3) --> "0" ,1,2, "3",4,5, "6",7
