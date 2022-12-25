@@ -346,6 +346,11 @@ namespace DSPUI
                 }
             }
         }
+
+        private void ToolsPNL_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     class MouseDownNewConnectionInfo

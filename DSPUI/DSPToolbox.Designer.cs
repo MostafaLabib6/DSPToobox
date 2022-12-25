@@ -81,6 +81,7 @@
             this.ToolsPNL.Name = "ToolsPNL";
             this.ToolsPNL.Size = new System.Drawing.Size(75, 533);
             this.ToolsPNL.TabIndex = 0;
+            this.ToolsPNL.Paint += new System.Windows.Forms.PaintEventHandler(this.ToolsPNL_Paint);
             // 
             // RunBTN
             // 
