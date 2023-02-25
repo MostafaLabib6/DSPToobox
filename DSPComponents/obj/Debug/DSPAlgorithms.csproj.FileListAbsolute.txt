@@ -39,3 +39,14 @@ C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponents\bin\Debug
 C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponents\bin\Debug\OxyPlot.xml
 C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponents\bin\Debug\OxyPlot.WindowsForms.xml
 C:\Users\Mostafa\Downloads\DSPToobox-main\DSPToobox-main\DSPComponents\obj\Debug\DSPAlgorithms.csproj.CopyComplete
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\bin\Debug\DSPComponents.dll
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\bin\Debug\DSPComponents.pdb
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\bin\Debug\OxyPlot.dll
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\bin\Debug\OxyPlot.xml
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\obj\Debug\DSPAlgorithms.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\obj\Debug\DSPAlgorithms.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\obj\Debug\DSPAlgorithms.csproj.CopyComplete
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\obj\Debug\DSPComponents.dll
+C:\Users\DELL\Documents\GitHub\DSPToobox\DSPComponents\obj\Debug\DSPComponents.pdb

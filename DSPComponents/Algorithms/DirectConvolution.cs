@@ -30,7 +30,7 @@ namespace DSPAlgorithms.Algorithms
             {
                 minIndex = Math.Min(x.SamplesIndices[0], h.SamplesIndices[0]);
             }
-            int numOfNonZeroSamples = x.Samples.Count + h.Samples.Count - 1;
+            int numOfNonZeroSamples = x.Samples.Count + h.Samples.Count ;
             // Indices List
             int currentIndex = minIndex;
             for (int i = 0; i < numOfNonZeroSamples; i++)
